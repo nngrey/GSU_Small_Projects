@@ -5,19 +5,21 @@
 <title>Roman Numeral Convertor</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="roman.css">
-    <script type="text/javascript" src="roman.js"></script>
+    <script type='text/javascript' src='roman.js'></script>
 </head>
 <body>
   <div>
     <h2>Convert to Roman Numerals</h2>
     <p>Enter a Number in Arabic/Hindu Form:</p>
-    <form action="" name="myForm">
-      <input type="text" name="arabicNumeral" value="Arabic Numeral">
-      <p><input type="submit"><input type="reset" value="clear"></p>
-      <p>Roman Numeral:</p>
-      <p><input type="text" name="romanNumeral"></p>
+    <form action="" method="post" name="myForm" onsubmit="return convert()">
+      <input type="text" name="arabicNumeral">
+        <p><input type="submit"><input type="reset" value="clear"></p>
+          <p>Roman Numeral:</p>
+      <p><input id="rnumber2" type="text" name="romanNumeral" value="something"></p>
+  <div></div>
     </form>
   </div>
+
 </body>
 </html>
 

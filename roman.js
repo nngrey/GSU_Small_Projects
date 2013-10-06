@@ -1,7 +1,7 @@
-//function convert(){
- // aNumber=document.myForm.arabicNumeral.value;
-  
-  aNumber=1232;
+function convert(){
+  aNumber=document.myForm.arabicNumeral.value;
+ // alert(aNumber);
+ //aNumber=1232;
   x=aNumber%10
   rNumber="";
   console.log(x);
@@ -33,12 +33,12 @@
    rNumber="IX";
    break;
    }
-   console.log(rNumber);
+ //  console.log(rNumber);
    aNumber=Math.floor(aNumber/10);
-   console.log(aNumber);
+ //  console.log(aNumber);
 
    x=aNumber%10
-  console.log(x);
+ // console.log(x);
   switch(x){
    case 1:
    rNumber="X"+rNumber;
@@ -67,12 +67,12 @@
    rNumber="XC"+rNumber;
    break;
    }
-   console.log(rNumber);
+//   console.log(rNumber);
    aNumber=Math.floor(aNumber/10);
-   console.log(aNumber);
+//   console.log(aNumber);
    
       x=aNumber%10
-  console.log(x);
+//  console.log(x);
   switch(x){
    case 1:
    rNumber="C"+rNumber;
@@ -101,12 +101,12 @@
    rNumber="CM"+rNumber;
    break;
    }
-   console.log(rNumber);
+//   console.log(rNumber);
    aNumber=Math.floor(aNumber/10);
-   console.log(aNumber);
+//   console.log(aNumber);
    
          x=aNumber%10
-  console.log(x);
+//  console.log(x);
   switch(x){
    case 1:
    rNumber="M"+rNumber;
@@ -117,9 +117,14 @@
    case 3:
    rNumber="MMM"+rNumber;
    break;
-   case 4, 5, 6, 7, 8, 9
-   Outside scope
+//   case 4, 5, 6, 7, 8, 9:
+//   Outside scope
    }
-   console.log(rNumber);
-   aNumber=Math.floor(aNumber/10);
-   console.log(aNumber);
+//   console.log(rNumber);
+//   console.log(aNumber);
+  // alert(rNumber);
+   document.getElementById("rnumber2").value=rNumber;
+//   textbox = rNumber;
+//   alert(textbox);
+   return false;
+}
