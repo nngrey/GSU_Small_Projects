@@ -8,15 +8,20 @@
     <script type='text/javascript' src='roman.js'></script>
 </head>
 <body>
-  <div>
-    <h2>Convert to Roman Numerals</h2>
-    <p>Enter a Number in Arabic/Hindu Form:</p>
+  <div id="box">
+    <div class = "container">
+    <h1>Convert to Roman Numerals</h1>
+    </div>
+    <div class = "container">
+    <p>Enter a Number from 1 to 3999 in Arabic/Hindu Form:</p>
     <form action="" method="post" name="myForm" onsubmit="return convert()">
       <input type="text" name="arabicNumeral">
+    </div>
         <p><input type="submit"><input type="reset" value="clear"></p>
-          <p>Roman Numeral:</p>
-      <p><input id="rnumber2" type="text" name="romanNumeral" value="something"></p>
-  <div></div>
+    <div class = "container">
+        <p>Roman Numeral:</p>
+      <p><input id="rnumber2" type="text" name="romanNumeral" value=""></p>
+    </div>
     </form>
   </div>
 
